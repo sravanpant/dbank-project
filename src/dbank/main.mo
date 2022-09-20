@@ -11,7 +11,7 @@ actor Dbank {
 
 
   stable var startTime = Time.now();
-  startTime := Time.now();
+  // startTime := Time.now();
   Debug.print(debug_show(startTime));
 
   let id = 234454325345643543654; 
