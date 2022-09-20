@@ -6,12 +6,12 @@ actor Dbank {
   stable var currentValue: Float = 300; 
   // Adds Orthogonal Persistence to the variable currentValue by adding the keyword 'stable' in front of the var.
   // Without the stable keyword, the expression 'var currentValue = 300;' is a flexible variable.
-  // currentValue := 300;
+  currentValue := 300;
   Debug.print(debug_show(currentValue));
 
 
   stable var startTime = Time.now();
-  // startTime := Time.now();
+  startTime := Time.now();
   Debug.print(debug_show(startTime));
 
   let id = 234454325345643543654; 
