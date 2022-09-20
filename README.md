@@ -42,7 +42,22 @@ npm start
 
 Which will start a server at `http://localhost:8080`, proxying API requests to the replica at port 8000.
 
-### Note on frontend environment variables
+## Running the project on Internet Computer Blockchain
+
+If you want to deploy or host your website after all the testing is done, you need cycles to keep the canisters running on the Internet Computer blockchain. So you can either buy Icp tokens from <a href="https://www.coinbase.com/price/internet-computer">Coinbase</a> or any other platform or you can go to the <a href="https://anv4y-qiaaa-aaaal-qaqxq-cai.ic0.app/">cycles faucet</a> of the Internet Computer and request free cycles for development purposes and follow the instructions given.
+
+After you have linked and verified your wallet, you need to run the following commands: 
+```bash
+dfx deploy --network ic
+```
+from there you can either follow the link available after the deployment or put in the address bar of your browser `https://<canister-id>.ic0.app/`. Replace the `<canister-id>` with your canister id. You can look for canister id by the command: 
+```bash
+dfx canister --network=ic id lookup
+```
+Now you can share the link of the website with anyone as anybody can access it.
+This project's deployed on blockchain's website link is https://wsxmw-ciaaa-aaaal-qbc7q-cai.ic0.app/.
+
+## Note on frontend environment variables
 
 If you are hosting frontend code somewhere without using DFX, you may need to make one of the following adjustments to ensure your project does not fetch the root key in production:
 
