@@ -50,12 +50,17 @@ After you have linked and verified your wallet, you need to run the following co
 ```bash
 dfx deploy --network ic
 ```
-from there you can either follow the link available after the deployment or put in the address bar of your browser `https://<canister-id>.ic0.app/`. Replace the `<canister-id>` with your canister id. You can look for canister id by the command: 
+From here you can either follow the link available after the deployment or put in the address bar of your browser 
+```bash
+https://{canister-id}.ic0.app/ 
+# Replace the {canister-id} with your canister id
+```
+You can look for canister id by the command: 
 ```bash
 dfx canister --network=ic id lookup
 ```
 Now you can share the link of the website with anyone as anybody can access it.
-This project's deployed on blockchain's website link is https://wsxmw-ciaaa-aaaal-qbc7q-cai.ic0.app/.
+This website of the project is deployed on the blockchain and can be accessed from https://wsxmw-ciaaa-aaaal-qbc7q-cai.ic0.app/.
 
 ## Note on frontend environment variables
 
